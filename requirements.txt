@@ -1,0 +1,24 @@
+# LangGraph & LangChain
+langgraph>=0.2.55
+langchain>=0.3.0
+langchain-anthropic>=0.3.0
+langchain-core>=0.3.0
+
+# Databricks
+databricks-connect==15.4.*
+databricks-sdk>=0.28.0
+
+# Local mock DB (DuckDB mirrors Databricks SQL dialect closely)
+duckdb>=0.10.0
+
+# Data
+pandas>=2.1.0
+
+# Config & utilities
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pydantic-settings>=2.2.0
+
+# Dev / testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
