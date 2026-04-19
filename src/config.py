@@ -7,12 +7,16 @@ class Settings(BaseSettings):
     # Anthropic
     anthropic_api_key: str = Field(..., env="ANTHROPIC_API_KEY")
 
+    # Google Gemini
+    gemini_api_key: Optional[str] = None
+
     # Databricks — only needed when USE_MOCK_DB=false
     databricks_host: Optional[str] = None
     databricks_token: Optional[str] = None
     databricks_cluster_id: Optional[str] = None
-    databricks_catalog: str = "hive_metastore"
-    databricks_schema: str = "supply_chain"
+    databricks_warehouse_id: Optional[str] = None
+    databricks_catalog: str = "db_supply_chain_workspace"
+    databricks_schema: str = "supply_chain_data"
 
     # App
     use_mock_db: bool = True
